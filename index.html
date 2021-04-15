@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <div id = 'popup'>
+      <h2>Password Preferences</h2>
+      <div class="slidecontainer">
+        <p>Password Length: <span id="demo"></span></p>
+        <!-- <input type="range" min="8" max="128" value="50" class="slider" id="myRange" id = 'length'> -->
+        <input type="range" min="8" max="128" value="50" class="slider" id = 'length'>
+      </div>
+      <p>Select which character sets to include in the password:</p>
+      <ul id="checkBundle">
+          <li><label><input type="checkbox" id = 'upper' />Upper-case letters</label>
+          <li><label><input type="checkbox" id = 'lower' />Lower-case letters</label>
+          <li><label><input type="checkbox" id = 'numbers' />Numbers</label>
+          <li><label><input type="checkbox" id = 'special'/>Special characters</label>
+       </ul>
+       <div class="card-footer">
+        <button id="submit" class="btn">Submit Selection</button>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
+  </body>
+</html>
